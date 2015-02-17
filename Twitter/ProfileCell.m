@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet UILabel *userId;
+@property (weak, nonatomic) IBOutlet UIImageView *userBgImage;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 
 @end
 
@@ -29,6 +31,22 @@
     self.userId.text = [NSString stringWithFormat:@"@%@", self.currentUser.screenname ];
     [self.userImage setImageWithURL:[NSURL URLWithString:self.currentUser.profileImageUrl]];
     
+    if([self.showBgImage isEqual: @"YES"]){
+        NSLog(@"hihihi");
+        [self.bgImage setImageWithURL:[NSURL URLWithString:self.currentUser.profileBgImageUrl]];
+        [self.userBgImage setImageWithURL:[NSURL URLWithString:self.currentUser.profileBgImageUrl]];
+    }
+    
+}
+
+- (void) setShowBgImage:(NSString *)showBgImage {
+    NSLog(@"hihihi %@", showBgImage);
+    _showBgImage = showBgImage;
+    if([showBgImage isEqual: @"YES"]){
+        [self.bgImage setImageWithURL:[NSURL URLWithString:self.currentUser.profileBgImageUrl]];
+        [self.userBgImage setImageWithURL:[NSURL URLWithString:self.currentUser.profileBgImageUrl]];
+        self.backgroundColor = [UIColor colorWithRed:85.0f/255.0f green:172.0f/255.0f blue:238.0f/255.0f alpha:1.0f];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

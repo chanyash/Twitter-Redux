@@ -14,6 +14,7 @@
 #import "TweetCell.h"
 #import "ComposeViewController.h"
 #import "TweetViewController.h"
+#import "AccountsViewController.h"
 
 @interface UserProfileViewController () <UITableViewDataSource, UITableViewDelegate, ComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
@@ -228,13 +229,28 @@
         
     }else if(sender.state == UIGestureRecognizerStateEnded){
         
-        CGRect finalframe = self.mainView.frame;
-        finalframe.origin.y = 0;
-        
-        [UIView animateWithDuration:0.6 animations:^{
+        if(velocity.y > 200 && self.currentUser == [User currentUser]){
+            
+            CGRect finalframe = self.mainView.frame;
+            finalframe.origin.y = 0;
             self.mainView.frame = finalframe;
             self.backgroundImage.transform = self.originBackground;
-        }];
+            
+            AccountsViewController *vc = [[AccountsViewController alloc] init];
+            
+            [self presentViewController:vc animated:YES completion:nil];
+            
+        }else{
+        
+            CGRect finalframe = self.mainView.frame;
+            finalframe.origin.y = 0;
+            
+            [UIView animateWithDuration:0.6 animations:^{
+                self.mainView.frame = finalframe;
+                self.backgroundImage.transform = self.originBackground;
+            }];
+        
+        }
         
     }
     

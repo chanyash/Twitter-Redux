@@ -22,6 +22,10 @@
 		5957BA181A91816800957400 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5957BA161A91816800957400 /* MenuViewController.xib */; };
 		5957BA211A91A48500957400 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957BA1F1A91A48500957400 /* MainViewController.m */; };
 		5957BA221A91A48500957400 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5957BA201A91A48500957400 /* MainViewController.xib */; };
+		5957BA261A93128300957400 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957BA241A93128300957400 /* AccountsViewController.m */; };
+		5957BA271A93128300957400 /* AccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5957BA251A93128300957400 /* AccountsViewController.xib */; };
+		5957BA2B1A93373300957400 /* AddAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5957BA291A93373300957400 /* AddAccountTableViewCell.m */; };
+		5957BA2C1A93373300957400 /* AddAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5957BA2A1A93373300957400 /* AddAccountTableViewCell.xib */; };
 		5995C1881A8692C800A95096 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5995C1861A8692C800A95096 /* LoginViewController.m */; };
 		5995C1891A8692C800A95096 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5995C1871A8692C800A95096 /* LoginViewController.xib */; };
 		5995C18C1A8693E500A95096 /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5995C18B1A8693E500A95096 /* TwitterClient.m */; };
@@ -78,6 +82,12 @@
 		5957BA1E1A91A48500957400 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5957BA1F1A91A48500957400 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5957BA201A91A48500957400 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5957BA231A93128300957400 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		5957BA241A93128300957400 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		5957BA251A93128300957400 /* AccountsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
+		5957BA281A93373300957400 /* AddAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAccountTableViewCell.h; sourceTree = "<group>"; };
+		5957BA291A93373300957400 /* AddAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAccountTableViewCell.m; sourceTree = "<group>"; };
+		5957BA2A1A93373300957400 /* AddAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAccountTableViewCell.xib; sourceTree = "<group>"; };
 		5995C1851A8692C800A95096 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5995C1861A8692C800A95096 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5995C1871A8692C800A95096 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -181,6 +191,9 @@
 				5957B9FD1A91165100957400 /* MenuList.h */,
 				5957B9FE1A91165100957400 /* MenuList.m */,
 				5957B9FF1A91165100957400 /* MenuList.xib */,
+				5957BA281A93373300957400 /* AddAccountTableViewCell.h */,
+				5957BA291A93373300957400 /* AddAccountTableViewCell.m */,
+				5957BA2A1A93373300957400 /* AddAccountTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -239,6 +252,9 @@
 				5957BA1E1A91A48500957400 /* MainViewController.h */,
 				5957BA1F1A91A48500957400 /* MainViewController.m */,
 				5957BA201A91A48500957400 /* MainViewController.xib */,
+				5957BA231A93128300957400 /* AccountsViewController.h */,
+				5957BA241A93128300957400 /* AccountsViewController.m */,
+				5957BA251A93128300957400 /* AccountsViewController.xib */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -367,6 +383,7 @@
 				5995C1981A86D1B300A95096 /* TweetsViewController.xib in Resources */,
 				5995C19B1A86DFBA00A95096 /* Twitter_logo_white_48.png in Resources */,
 				5957BA011A91165100957400 /* MenuList.xib in Resources */,
+				5957BA271A93128300957400 /* AccountsViewController.xib in Resources */,
 				5957BA221A91A48500957400 /* MainViewController.xib in Resources */,
 				5957BA181A91816800957400 /* MenuViewController.xib in Resources */,
 				59CE73751A8690EE00BB21E5 /* LaunchScreen.xib in Resources */,
@@ -378,6 +395,7 @@
 				5995C1B11A87727500A95096 /* ComposeViewController.xib in Resources */,
 				5957BA0E1A9127F900957400 /* iconmonstr-note-21-icon-32.png in Resources */,
 				5995C1AC1A87726400A95096 /* TweetViewController.xib in Resources */,
+				5957BA2C1A93373300957400 /* AddAccountTableViewCell.xib in Resources */,
 				5957B9761A88865600957400 /* favorite_on.png in Resources */,
 				5995C1A11A86EF3F00A95096 /* TweetCell.xib in Resources */,
 			);
@@ -432,10 +450,12 @@
 			files = (
 				5995C18C1A8693E500A95096 /* TwitterClient.m in Sources */,
 				5957B9FB1A91137900957400 /* ProfileCell.m in Sources */,
+				5957BA261A93128300957400 /* AccountsViewController.m in Sources */,
 				59CE736A1A8690EE00BB21E5 /* AppDelegate.m in Sources */,
 				5957BA001A91165100957400 /* MenuList.m in Sources */,
 				5957BA171A91816800957400 /* MenuViewController.m in Sources */,
 				5995C1931A86AFD500A95096 /* User.m in Sources */,
+				5957BA2B1A93373300957400 /* AddAccountTableViewCell.m in Sources */,
 				5995C1B01A87727500A95096 /* ComposeViewController.m in Sources */,
 				5995C1AB1A87726400A95096 /* TweetViewController.m in Sources */,
 				5995C1901A86AFBC00A95096 /* Tweet.m in Sources */,

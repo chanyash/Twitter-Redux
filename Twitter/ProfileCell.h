@@ -12,5 +12,6 @@
 @interface ProfileCell : UITableViewCell
 
 @property (nonatomic, strong) User *currentUser;
+@property (nonatomic, strong) NSString *showBgImage;
 
 @end
