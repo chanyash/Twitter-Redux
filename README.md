@@ -24,6 +24,7 @@ Time spent: 20h
         Tap account to switch to
         Include a plus button to Add an Account
         Swipe to delete an account
-
-### Walkthrough
+        
+        
+![Video Walkthrough](record1.gif)
 
